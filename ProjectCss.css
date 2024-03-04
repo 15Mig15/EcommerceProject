@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.contenedor{
+    background-color: rgb(99, 165, 204);
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.cardProducto{
+    text-align: center;
+    background-color: rgb(119, 116, 116);
+    border-radius: 10px;
+    color: white;
+    width: 180px;
+    height: 220px;
+    margin: 20px;
+    display: inline-block;
+}
+
+
+.cardProducto button{
+    width: 100px;
+}
+
+.carrito{
+    width: 25px;
+    margin-left: 20px;
+    margin-right: 20px; ;
+}
+
+#prod_en_Carrito{
+    background-color: rgb(63, 137, 180);
+    color: white;
+}
+
+#prod_en_Carrito .cardProductoC{
+    border: 2px solid white;
+    margin: 10px;
+}
+
+
+.icon-card{
+    width: 40px;
+    margin: 5px 0px 10px 20px;
+
+}
+
+#search-prod{
+    width: 400px;
+}
+
+.entorno_tarjeta {
+    position: fixed;
+    margin: 20px;
+}
+
+.card img {
+    margin-top: 10px;
+    max-width: 100%;
+    margin-left: 10px;
+
+
+}
+
+.card-frente {
+    align-self: start;
+    max-width: 85%;
+    order: 2;
+    margin-top: -4rem;
+    z-index: 1;
+    position: relative;
+}
+
+.card-frente__data {
+    position: absolute;
+    inset: 0;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.card-frente__data > div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%; 
+}
+
+.card-frente__data img {
+    max-width: 3.5rem;
+}
+
+.card-nombre-date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 25px;
+    padding-top: 0;
+    margin-bottom: 30px;
+
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo.doble {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.form-grupo.doble > div {
+    width: 50%;
+} 
+
+.columnas {
+    display: flex;
+    gap: .5rem;
+} 
+
+.columnas input {
+    width: 100%;
+}
+
+.seccionMY {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 1px solid var(--clr-light-gray);
+    padding: 15;
+    border-radius: 10px;
+}
+
+.input::placeholder {
+    color: blue;
+} 
+
+.label {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.button {
+    font-size: 10px;
+    padding-block: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+}
+
+.icon-card,#close,.carrito:hover{
+    cursor: pointer;
+}
+
+.desactivar{
+    display: none;
+}
+
+
+
+
+
+

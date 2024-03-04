@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProjectCss.css">
+    <title>Proyecto</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="titulo">Tienda</h1>
+    <img src="cart.png" id="carrito" class="carrito">
+    <input type="search" name="buscador" id="search-prod" placeholder="Busca tu producto">
+    <div class="icon-card" id="icon-card">💳</div>
+
+
+     
+     <main class="entorno_tarjeta desactivar">
+        
+        <div class="card">
+            <div id="close">❌</div>
+          <div class="card-frente">
+            <img src="tarjeta.png" alt="Frente de la tarjeta">
+            <div class="card-frente__data">
+              <img src="./images/card-logo.svg" alt="">
+              <div>
+                <p class="card-numero" id="card-numero">0000 0000 0000 0000</p>
+                <div class="card-nombre-date">
+                  <p class="card-nombre" id="card-nombre">Miguel</p>
+                  <p class="card-fecha">
+                    <span id="card-mes">00</span>/<span id="card-año">00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="form-card">
+          <form class="form" id="form">
+            <div class="form-grupo">
+              <label for="input-name" class="label">Card Nombre</label>
+              <input type="text" class="input" id="input-name" placeholder="e.j Miguel" maxlength="20" required>
+            </div>
+            <div class="form-grupo">
+              <label for="input-numero" class="label">Card Numero</label>
+              <input type="text" class="input" id="input-numero" maxlength="19" placeholder="e.j 1234 5678 9101 1121" required>
+            </div>
+            <div class="form-grupo doble">
+              <div class="seccionMY">
+                <label for="input-mes" class="label">Exp. Date (MM/YY)</label>
+                <div class="columnas">
+                  <input type="text" class="input" id="input-mes" placeholder="MM" maxlength="2" required>
+                  <input type="text" class="input" id="input-año" placeholder="YY" maxlength="2" required>
+                </div>
+              </div>
+            
+            <div class="form-group">
+                <div class="total_compra" id="total_compra"></div>
+              <button class="button-card" type="submit">Confirmar</button>
+            </div>
+        </div>
+          </form>
+          
+    
+    
+    
+      </main>
+
+
+
+    <div id="contenedor" class="contenedor"></div>
+
+    
+    
+    <dialog id="prod_en_Carrito" >
+        <h2>Tus Productos</h2>
+        <div id="contenedorEnCarrito"></div>
+        <div class="carritoTotal">Total</div>
+        <button class="btnCerrarCarrito">Cerrar</button>
+        <button class="btnVaciarCarrito">Vaciar</button>
+        <button>Confirmar</button>
+    </dialog> 
+    
+<!-- JS -->
+    <script src="ProjectJs.js"></script>
+    <script src="EntornoPago.js"></script>
+
+<!-- toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
