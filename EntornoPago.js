@@ -29,6 +29,7 @@ inputnumero.addEventListener("input", () => {
     if (inputnumero.value.length === 0) {
         cardnumero.innerText = "0000 0000 0000 0000";
     }
+    
 })
 
 inputmes.addEventListener("input", () => {
